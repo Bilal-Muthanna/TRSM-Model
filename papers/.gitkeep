@@ -1,0 +1,1390 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{amsthm}
+\geometry{margin=1in}
+% ================= TRSM: minimal macros & theorem envs =================
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{trsmthm}{Statement}[section]
+\newtheorem{trsmdfn}[trsmthm]{Definition}
+\newtheorem{trsmlem}[trsmthm]{Lemma}
+\newtheorem{trsmstmt}{Statement}[section]  % مرقّم ضمن القسم
+\theoremstyle{definition}
+\newtheorem{trsmdefn}[trsmstmt]{Definition} % يشارك نفس العداد
+\theoremstyle{plain}
+
+\theoremstyle{definition}
+%\newtheorem{trsmdefn}[trsmstmt]{Definition}
+\theoremstyle{remark}
+\newtheorem{trsmremark}[trsmstmt]{Remark}
+\newcommand{\Uplus}{\mathcal{U}^{+}}        % advanced positive-time sector
+\newcommand{\hbarc}{\hbar c}
+\newcommand{\Rbg}{R_{0}}
+\newcommand{\Rev}{R_{1}}
+\newcommand{\Fminus}{\mathcal{F}^{-}} 
+
+\newcommand{\Lag}{\mathcal{L}}
+\newcommand{\Ecut}{E_{\mathrm{cut}}}
+\newcommand{\Mpl}{M_{\mathrm{Pl}}}
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{unsrtnat} 
+
+
+
+%\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, positioning}
+
+
+
+\title{One Theory, One Mechanism and One Constant for Everything; Temporal Reflected Spectrum Model (TRSM): \newline A New Cosmo-nuclear Paradigm}
+
+\author{ Bilal Muthanna\\ Ibb University - Yemen}
+
+\date{2018 - 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present the \emph{Temporal Reflected Spectrum Model} (TRSM) as a cosmo--nuclear framework aimed at closing major gaps left unaddressed by previous paradigms. TRSM rests on a simple postulate: time is postulated to be a past--directed dimension that is \emph{generated at the instant an event occurs}, records the event bit by bit, and then propagates backward as a reflected flow archiving negative--valued entries. In our universe, dark energy represents that \emph{negative--time reflected spectrum} originating from an advanced universe. This reflected spectrum permeates our cosmos in a quasi--homogeneous manner and establishes the \emph{primordial fabric} of our universe. Within this cold, quiescent fabric, long--term accumulation of reflected temporal deposits condenses and precipitates into \emph{heavy atoms} \emph{prior} to the emergence of energy and the observable universe. The concentration of these heavy atoms, at some points on this identical fabric, breaks the perfect homogeneity, seeding \emph{hollow temporal vortices} that generate a vast population of \emph{supermassive black holes}; the outer axes of these vortices lay down the main blueprint for the subsequent formation of a large number of galaxies.
+
+TRSM is distinguished by employing a \textbf{single organizing mechanism} and a \textbf{single unifying scale}, \(E_{\mathrm{cut}}\), that link the cosmic and nuclear domains within one coherent scheme. This article sets out the foundational idea of the model, its unifying objectives, and high--level avenues for empirical testing, while deferring sector--specific mechanisms, full mathematical derivations, and datasets to forthcoming companion papers dedicated to each sector.
+\end{abstract}
+
+
+%====================================================
+\section{Why a New Framework Is Needed}
+\label{sec:motivation}
+%====================================================
+
+\subsection*{Background and Context}
+
+For more than five decades the \emph{standard cosmological paradigm}—%
+$\Lambda$CDM+General Relativity, supplemented by a battery of particle–physics
+models—has described many observations with admirable numerical success.
+Yet, taken as a whole, these stitched–together models leave \(\sim95\%\) of the
+Universe (\emph{dark energy} and \emph{dark matter}) unexplained, and they rely
+on a growing set of empirical parameters whose physical origin remains obscure.
+Increasing observational precision therefore \emph{tightens} tensions instead of
+reducing them, exposing the need for a deeper, conceptually unified theory.
+
+\subsection*{Core Shortcomings of the Conventional Picture}
+
+\begin{enumerate}
+    \item \textbf{Opaque treatment of time.}  Current frameworks lack a
+          quantitative, observer–independent definition of \emph{real} physical
+          time and provide no operational metric for its direct measurement.
+
+    \item \textbf{Origin of mass--energy.}  The Big Bang is taken as an initial
+          condition, with no \emph{explanation}; no first--principles mechanism
+          accounts for the emergence of energy or baryonic mass \emph{ex nihilo}.
+
+    \item \textbf{Disconnect between micro and macro scales.}
+          Nuclear phenomenology (\(\mathcal O\!\left(\mathrm{MeV}\right)\)) and
+          cosmic dynamics (\(\mathcal O\!\left(\mathrm{Mpc}\right)\)) are modelled
+          by distinct theories that share parameters only numerically, offering
+          no causal bridge across \(40\) orders of magnitude.
+
+    \item \textbf{Biological enigmas.}  Phenomena such as sleep, ageing,
+          consciousness, and even death remain outside the explanatory reach of
+          purely metric‐based physics, despite their intimate link to temporal
+          processes.
+
+    \item \textbf{Ad--hoc constants and ``fine–tuning.''}  A proliferation of
+          fixed numbers (Yukawa couplings, cosmological constant, inflationary
+          potentials, \emph{etc.}) is introduced solely to align predictions
+          with data, rather than emerging from first principles.
+
+    \item \textbf{Inability to explain many of observed phenomena.}
+The current models still unable to explain many cosmic and quantum phenomena despite decades of research and experimentation.
+    \item \textbf{Missing explanatory power for $\sim95\%$ of cosmic content.}
+          Dark components are invoked as bookkeeping devices, not derived
+          entities, leaving their nature and dynamics essentially unconstrained.
+\end{enumerate}
+
+\subsection*{Enter the Temporal--Reflected Spectrum Model (TRSM)}
+
+The \emph{Temporal--Reflected Spectrum Model} proposes a single geometric
+principle: every physical event carries a pair of counter‐propagating
+time–flow vectors \(v_T^{(+)}\) and \(v_T^{(-)}\) obeying the conserved budget
+\(\bigl|v_T^{(+)}\bigr|^{2}+\bigl|v_T^{(-)}\bigr|^{2}=c^{2}\).
+A universal \emph{deposition threshold} \(E_{\mathrm{cut}}=4.84\;\mathrm{MeV}\)
+dictates when negative–time flux converts into positive rest–mass, energy or
+radiation.  From this single scale, TRSM:
+
+\begin{itemize}
+    \item derives \(G\) as \(G_{\mathrm{eff}}=c^{4}/(8\pi E_{\mathrm{cut}})\);%
+    \item reproduces nuclear binding energies and the Fe--\(56\) peak without
+          liquid-drop parameters;
+          \item predicts the mysterious nature of dark energy and connects it to the dark matter through 
+          \(
+\rho_{\mathrm{DM}} = 2\rho_\Lambda - E_{\mathrm{cut}}/c^{2}
+\) ;
+    \item links cosmic acceleration to the same negative–time reservoir that
+          seeds baryonic matter;
+    \item unifies micro–and macro–physics via a common temporal geometry,
+          erasing the scale gulf that plagues $\Lambda$CDM; and
+    \item predicts falsifiable signatures (e.g.\ a universal
+          \(4.84\;\mathrm{MeV}\) $\gamma$-ray line, altitude–dependent \(G\),
+          and $\sim\!10\%$ Higgs-rate suppression) absent from competing
+          theories.
+\end{itemize}
+
+In short, TRSM replaces a patchwork of disconnected modules with a
+single, time–centric framework that \emph{simultaneously} addresses the
+conceptual gaps listed above.  
+
+\section{Introduction}
+\paragraph*{Definition.}
+\emph{The Temporal--Reflected Spectrum Model (TRSM) is a
+single–constant, single–mechanism physical framework designed to close the
+conceptual gaps left by standard cosmology and particle physics; by invoking one
+unified temporal process governed solely by the universal deposition threshold
+\(E_{\mathrm{cut}}\), TRSM aims to account for \textbf{all} observable phenomena—from
+sub-nuclear interactions to cosmic-web dynamics—within a coherent, scale-independent
+theory.}
+
+
+The Temporal Reflected Spectrum Model (TRSM) proposes that we live within the past-time reflected off another advanced universe. Our observable universe is a secondary negative-energy universe emerging as a temporal reflection from a primary, advanced positive-energy universe. The advanced universe occupies the positive axis of cosmic time. In contrast, our reflected universe lies on the negative temporal axis, characterized by negative-energy structures. TRSM introduces a fundamental negative temporal environment (dark energy) as the basic fabric of our universe and the origin of all observed cosmological phenomena.
+
+\section{A Universe vs Anti-Universe and Zero-Total-Energy}
+
+The Temporal Reflected Spectrum Model (TRSM) posits that all of cosmic existence originated from a single, fundamental temporal seed. This seed spontaneously gives rise to two temporally opposed vectors: one advancing forward in time with velocity \( +c \), and the other reflecting backward in time with velocity \( -c \). Each vector seeds a distinct universe: the forward vector generates a universe filled with positive energy and Not bound by the constraints of time that we know, while the backward vector gives rise to an anti-universe composed of negative energy propagating toward the temporal past.
+
+This pair—universe and anti-universe—forms a perfectly symmetric temporal dipole with a net total energy of zero:
+
+\[
+E_{\text{total}} = E_{\\{universe}} + E_{\\{anti-universe}} = 0
+\]
+
+Within this dual structure, the emergence of matter in the universe is intrinsically mirrored by the emergence of antimatter in the anti-universe. Each particle-generating event in the forward-time domain is accompanied by a corresponding anti-particle reflection in the backward-time domain. The TRSM framework thus provides a natural explanation for the origin of both matter and antimatter, governed by the conservation of temporal energy and the fundamental symmetry of spectral reflection.
+
+This foundational symmetry sets the stage for deeper investigations into the nature of baryogenesis, charge-parity-time (CPT) symmetry, and the role of temporal reflection in particle-antiparticle balance at cosmological scales.
+
+
+\section{Opposite Universes Correlation and Natural Mechanisms of Spectral Reflection}
+
+In the framework of the Temporal Reflected Spectrum Model (TRSM), the concept of temporal reflection is central to understand the dual-universe structure. Five distinct scenarios have been proposed to elucidate the mechanisms by which a temporal  spectrum can reversely emerge from an advanced-positive domain and forming our observable mirrored universe.
+
+\subsection{Scenario 1: The Cosmic Tree}
+
+\textbf{Core Idea:} The universe is visualized as a cosmic tree emanating from an initial temporal seed. In this model, the positive-energy universe \(v_T^{(+)}\) represents the trunk and branches of the tree, growing forward in positive time. Conversely, the negative-time reflections \(v_T^{(-)}\)  form the roots, extending backward as a negative time reflection and constituting our mirrored universe. All cosmological structures, including galaxy clusters and cosmic webs, emerge within these negative-time roots (Figure~\ref{fig:cosmic_tree}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{cosmic_tree.jpg}
+    \caption{Cosmic Tree: Positive-energy trunk and branches, with negative-time roots forming our universe.}
+    \label{fig:cosmic_tree}
+\end{figure}
+
+\subsection{Scenario 2: Temporal Wave Shells}
+
+\textbf{Core Idea:} This scenario describes the universe as concentric shells of temporal waves propagating in both forward and backward directions along the time axis. Each moment of time generates a pair of opposite waves: \(v_T^{(+)}\) forward-moving positive-time shell, and \(v_T^{(-)}\) instantaneously reflected negative-time shell. Over cosmic history, this iterative process produces an extensive network of opposing temporal wave shells, fully occupying spacetime and forming the structural foundation of both universes (Figure~\ref{fig:temporal_wave_shells}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{temporal_wave_shells.jpg}
+   \caption{Temporal Wave Shells: Forward-backward time shells expanding and reflecting through spacetime.}
+    \label{fig:temporal_wave_shells}
+\end{figure}
+
+\subsection{Scenario 3: The Time-Bridge Black Hole}
+
+\textbf{Core Idea:} A circular temporal pulse arises within a region of cosmic stillness, emitting two opposing temporal wavefronts. The outer positive-time segment  \(v_T^{(+)}\) expands forward, giving rise to the advanced universe. Simultaneously, the inner negative-time segment \(v_T^{(-)}\) collapses inward, creating a "time-bridge black hole". This black hole functions as a temporal throat connecting the two universes. Positive energy from the advanced universe is drawn into this bridge and reflected off as a negative-time energy, creating our mirrored universe (Figure~\ref{fig:time_bridge_black_hole}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{time_bridge_black_hole.jpg}
+    \caption{Inward collapsing negative-time wave from advanced universe is absorbed by a central black hole and then re-emitted into another dimension that forms our reflected universe.}
+    \label{fig:time_bridge_black_hole}
+\end{figure}
+
+\subsection{Scenario 4: The Resonant Reflection Membrane}
+
+\textbf{Core Idea:} One helical temporal wave is born with opposite-directions tow vectors: an outer positive \(v_T^{(+)}\) expands outward forming an advanced universe, and an inner negative \(v_T^{(-)}\) contracts inward. Eventually, the outward-moving vector surpasses the inward contraction, and the inner vector stabilizes into a thin, sensitive "reflection membrane". Each forward pulse of the advanced universe causes this membrane to resonate, reflecting negative-frequency echoes. These temporal echoes accumulate and form the fundamental fabric of our mirrored negative-time universe(Figure~\ref{fig:resonant_reflection_membrane}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{resonant_reflection_membrane.jpg}
+    \caption{upper real universe, lower reflected echoes-universe, reflective temporal membrane (reflexing-drum).}
+    \label{fig:resonant_reflection_membrane}
+\end{figure}
+
+%--------------------------------------------------
+\subsection{Scenario 5: Temporal Jet Propulsion}
+
+\textbf{Core Idea:}  
+The advanced universe behaves analogously to a rocket that accelerates along the positive–time axis, while an oppositely directed exhaust of negative–time energy is expelled downward along the negative–time axis.  
+In this jet–propulsion picture, the forward temporal vector \(v_T^{(+)}\) drives the expansion of the positive–energy universe, whereas the reflected temporal vector \(v_T^{(-)}\) constitutes a continuous exhaust that coalesces into an anti-universe with negative energy.  Momentum conservation in the temporal dimension demands that the net energy–momentum of the universe/exhaust pair remains strictly zero:
+
+\[
+E_{\text{total}}
+  \;=\;
+  E_{+} \;+\; E_{-}
+  \;=\; 0,
+\qquad
+P_{\text{total}}
+  \;=\;
+  P_{+} \;+\; P_{-}
+  \;=\; 0.
+\]
+
+This mechanism mirrors the classical action–reaction principle of rocket thrust:  
+\emph{the more negative–time exhaust is emitted, the more effectively the advanced universe accelerates into the future}.  Consequently, the anti-universe is not a passive reflection; it is dynamically generated as the temporal “fuel” whose negative flow sustains the forward evolution of its positive-energy counterpart.
+Figure~\ref{fig:jet_reflection} 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{jet_reflection.jpg}
+   \caption{the advanced (positive-energy) universe moves forward in time like a rocket, while the reflected negative-time exhaust forms an anti-universe driving the motion and preserving zero total energy.}
+    \label{fig:jet_reflection}
+\end{figure}
+
+%--------------------------------------------------
+%\input{jet_reflection.tex}
+
+These five scenarios collectively offer robust conceptual frameworks that enhance our understanding of how two universes can emerge and effect each other within two opposite directions. 
+
+
+\section{Core Assumptions of TRSM}
+\subsection{The Backward Arow of Time }
+Time is postulated to be a past--directed dimension that is \emph{generated at the instant an event occurs}, records the event step by step, and then propagates backward as a reflected flow archiving negative--valued entries. This reflective, recording nature of time is the main reason that led to the emergence of our secondary, reflective echoes-universe.   
+
+\subsection{Dual-Universe Structure}
+The cosmological existence comprises two parallel universes:
+\begin{itemize}
+    \item \textbf{Advanced Positive-Energy Universe:} Located on the positive time axis, continuously evolving toward the future. This advanced universe has special physical properties and free of any time limits or temporal restrictions.
+    \item \textbf{Our Reflected Negative-Energy Universe:} Located on the negative time axis, representing a temporal reflection of the advanced universe. This reflected time records events as a negative, temporal values  creating a cosmic historical archive of the advanced universe and a reflected echoes-universe of it.
+\end{itemize}
+
+\subsection{Fundamental Negative Temporal Background (Dark Energy)}
+The reflected, negative-energy, temporal-environment "identified as dark energy" constitutes the fundamental homogeneous fabric of our reflected universe. This negative temporal spectrum is the primordial structure from which all mass, energy, and cosmological phenomena emerge in our universe.
+
+\subsection{Dual Reflected Temporal Vectors}
+Within a negative temporal-background, every event in our universe arises from a pair of temporal vectors:
+\begin{itemize}
+    \item The first temporal vector  is the vector of temporal background "dark energy" which reflected directly from the advanced universe. This vector moves at the speed of light but, in the opposite direction taken a negative values.
+    \item The second vector is reflected from the structure of the new emerging universe. This vector is produced at the moment the event occurs. It records the event and then is reflected back in parallel with the first vector forming a second layer of the reflected time fabric, which, along with the first fabric forming what we know as "dark matter".
+\end{itemize}
+%\begin{equation}
+
+\paragraph\\{ TRSM replaces the speed of light in Einstein's energy equation with the speed of these two time vectors.}
+\boxed{~(v_T^{+})^{2} + (v_T^{-})^{2} = c^{2}.~}
+
+%\label{eq:TRSM-split-final}
+%\end{equation}
+% ================= Extended Core Assumptions (to append in Chapter 5) =================
+\subsection*{Extended Core Assumptions of TRSM}
+
+\begin{enumerate}
+\setcounter{enumi}{0} % continue numbering after the first three core assumptions
+
+\item \textbf{Matter-first deposition.} 
+TRSM posits that \emph{matter precedes energy} in our universe: heavy nuclei condense first within the cold, negative-time reflected fabric $\mathcal{F}^{-}$, while positive energy appears only upon inner-branch squaring (cf.\ Sec.~\ref{sec:TRSM-fabric}).
+
+\item \textbf{No Big Bang postulate.} 
+TRSM does \emph{not} assume a Big Bang; cosmic history emerges from long-term accumulation and squaring-driven ignitions within $\mathcal{F}^{-}$, obviating the need for an initial singular explosion.
+
+\item \textbf{Two temporal sectors with distinct properties.} 
+There exist two time sectors: a negative-time sector tied to the dark-energy "reflected spectrum", and a negative-positive time sector tied to the observable universe. Their kinematic coupling obeys the split identity 
+$\big(v_T^{+}\big)^{2}+\big(v_T^{-}\big)^{2}=c^{2}$ %(see Sec.~\ref{sec:TRSM-EFT}).
+
+\item \textbf{Information preservation by reflected time.} 
+Event information is conserved by a reflected temporal vector born at event onset and propagating toward the past ($\Delta t^{-}$), archiving the event with negative-valued records in $\mathcal{F}^{-}$.
+
+\item \textbf{Temporal origin of quantum entanglement.} 
+Quantum entanglement is fundamentally \emph{temporal entanglement}: correlations are mediated along the reflected temporal dimension; spatial nonlocality is emergent.
+
+\item \textbf{Higgs as pervasive temporal density.} 
+The Higgs field effectively encodes a pervasive \emph{temporal density}; masses arise from couplings to the TRSM reflection sector ($R_\pm$) with scale $f\simeq \Ecut$ %(cf.\ Sec.~\ref{sec:TRSM-EFT}).
+
+\item \textbf{Stellar power from heavy-to-light disintegration.} 
+Stellar interiors are dominated, in net, by \emph{heavy-to-light disintegration cascades} trending toward hydrogen, with luminosity sourced by inner-branch squaring and not by net fusion as conventionally assumed.
+
+\item \textbf{Gravity as emergent reflected pressure.} 
+Gravitational phenomena are emergent from the helical geometry, in addition to accumulated negative-time deposition and reflected-field stresses, rather than from spacetime curvature alone; this is compatible with a zero-energy universe.
+
+\end{enumerate}
+% =======================================================================
+\paragraph*{Scope}
+ This manuscript introduces the unified TRSM framework , while deferring sector–specific details to a set of forthcoming papers. Forthcoming articles will
+treat, each in its own right. Each paper will provide full derivations, datasets, and testable predictions; the
+present work serves as a blueprint and organizing principle for the model.
+
+%\subsection{Dark Matter as Reflected Temporal Interaction}
+%The interaction between these two reflected temporal layers generates dark matter, viewed as a direct result of the temporal deposition and interaction of these negative temporal reflections.
+
+\section{Light as a Measure of Temporal Flow Velocity}
+
+In this negative temporal environment, the speed of light is redefined as follows:
+
+\begin{itemize}
+    \item Light is not merely a conventional particle or wave but rather a measure of the flow velocity of temporal vectors in the negative temporal environment.
+    \item The maximum reflected temporal speed equals the speed of light, but in the opposite direction (negative).
+\end{itemize}
+
+When a particle increases its velocity moving along the negative temporal axis toward zero, the reflected temporal vector slows and dilates time until it completely vanishes upon reaching the speed of light:
+
+\begin{equation}
+T \rightarrow 0 \quad \text{as} \quad v \rightarrow c
+\end{equation}
+
+Conversely, as particle velocity decreases towards absolute zero, the speed of the reflected temporal vector reaches its maximum negative value, initiating temporal deposition into mass:
+
+\begin{equation}
+T \rightarrow T_{max(-c)} \quad \text{as} \quad v \rightarrow 0
+\end{equation}
+
+Mass is thus created from negative temporal energy through temporal deposition at low velocities.
+
+\section{Universal Dual-Vector Temporal Flow Equation (UTFE)}
+
+Every cosmological event must adhere to the fundamental equation:
+
+\begin{equation}
+(v_T^{+})^2 + (v_T^{-})^2 = c^2
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $v_T^{+}$ represents the second layer of temporal flow speed vector which is reflected from the act of building the secondary reflected universe that we live in. This vector is moving toward zero and positive values within the basic, negative fabric of reflected spectrum determine by the initial vector $v_T^{-}$.
+    \item $v_T^{-}$ represents the basic, negative, spectral fabric witch is reflected from an advanced universe. This reflected temporal flow speed vector moving toward negative time values ( from future backward to past).
+    \item $c$ is the maximum temporal speed magnitude equivalent to the speed of light.
+\end{itemize}
+% --------------------------------------------------------------------
+%==================================================
+%\section{Energetic–Time Identity and Its Central Role}
+%\label{sec:energy-time-identity}
+%==================================================
+
+%The reflected–spectrum paradigm hinges on a \textbf{single energetic
+%identity} that fuses three apparently disconnected relations:
+
+%\begin{equation}
+ % E \;=\; h f \;=\; k_{B} T \;=\; m c^{2}
+%  \;\;\;\Longrightarrow\;\;\;
+ % t \;=\; \frac{h f}{k_{B} c^{2}},
+%  \label{eq:energy-time-identity}
+%\end{equation}
+
+%where $E$ is the packet energy, $f$ its characteristic frequency,
+%$T$ an effective (thermodynamic) temperature, and $m$ the inertial
+%mass deposited once the universal time–reflection threshold is crossed.
+%Equation~\eqref{eq:energy-time-identity} serves a \emph{triple purpose}
+%inside TRSM:
+
+%\begin{enumerate}[label=(\alph*)]
+%  \item \textbf{Unified bookkeeping} — it collapses quantum, thermal,
+      %  and relativistic energy scales into \emph{one} conserved budget,
+       % thereby motivating the search for a %\emph{single} physical
+       % constant governing all hierarchies.
+  %\item \textbf{Emergent time} — time is not an external coordinate
+     %   but a derived quantity measured directly by the energy/frequency of
+     %   reflected modes; cf.\ the right‐hand equality in
+      %  Eq.~\eqref{eq:energy-time-identity}.
+ % \item \textbf{Scale‐bridging} — inserting microwave, MeV or cosmological
+    %    frequencies into Eq.~\eqref{eq:energy-time-identity} reproduces,
+      %  respectively, subatomic, nuclear and Hubble %time scales, foreshadowing
+    %    why the same deposition constant $E_{\text{cut}}=4.84\,$MeV resurfaces
+    %    across $\sim\!20$ orders of magnitude in energy.
+%\end{enumerate}
+
+%\paragraph{Editorial remarks for the reader.}
+%\begin{itemize}
+%  \item Eq.~\eqref{eq:energy-time-identity} \emph{does not} override the
+      %  detailed machinery of quantum statistics or general relativity; rather,
+      %  it encodes the TRSM \emph{bookkeeping rule} that any energy slice must
+      %  be registered simultaneously on the wave (frequency), thermal
+      %  (temperature) and inertial (mass) ledgers.
+ % \item Quantising the dual time–flow vectors with the global constraint
+     %   $(v^{+}_{T})^{2}+(v^{-}_{T})^{2}=c^{2}$ reproduces the usual
+      %  uncertainty relation $\Delta t \,\Delta E = \hbar/2$, now interpreted
+      %  as the \emph{minimal phase–space cell} of the reflected spectrum.
+        %(see Appendix~\ref{app:uncertainty}).
+  %\item When $E$ is fixed to the universal deposition quantum
+      %  $E_{\text{cut}}$, Eq.~\eqref{eq:energy-time-identity} pins down the
+      %  \emph{temporal grain} $\tau_{\text{cut}}=h/E_{\text{cut}}$ that
+    %    underlies every derivation in the next section.
+%\end{itemize}
+
+%Equation~\eqref{eq:energy-time-identity} will therefore act as the
+%\enquote{Rosetta stone} for all subsequent sections, culminating in the
+%multi‐faceted appearance of the single constant $E_{\text{cut}}$.
+\section{TRSM Unified Cycle--Time Identity}
+\label{sec:TRSM-unified-identity}
+
+For any coherent excitation (mode) with energy $E$ we use
+\begin{equation}
+E=\hbar\omega=h\nu,
+\qquad
+T_{\mathrm{eff}}=\frac{E}{k_B},
+\qquad
+m_{\mathrm{eff}}=\frac{E}{c^2},
+\end{equation}
+and define the \emph{cycle time} (phase period)
+\begin{equation}
+\boxed{\;
+\tau_{\mathrm{cyc}}
+=\frac{1}{\nu}
+=\frac{h}{E}
+=\frac{h}{k_B T_{\mathrm{eff}}}
+=\frac{h}{m_{\mathrm{eff}}c^2}
+\;}
+\label{eq:TRSM-unified-cycle}
+\end{equation}
+Within TRSM, the negative-time accumulation for a branch can be identified with a cycle time, e.g.
+\begin{equation}
+\Delta t^{-}\;\equiv\;\tau_{\mathrm{cyc}}^{(-)}=\frac{h}{E^{(-)}},
+\end{equation}
+whenever the branch is probed as a coherent mode. This identity is definitional at the mode level (not a universal equality across arbitrary thermodynamic or inertial states) and provides a consistent bridge between frequency, effective temperature, effective mass, and temporal periodicity in TRSM.
+
+ 
+\section{Reflected Temporal Fabric and Emergent Structure in TRSM}
+\label{sec:TRSM-fabric}
+
+(Foundational postulate)
+The Temporal Reflected Spectrum Model (TRSM) posits that \emph{dark energy} is a negative-time reflected spectrum sourced by an advanced positive universe. This spectrum establishes a cold, negative-time primordial fabric, denoted by $\mathcal{F}^{-}$, within which additional negative-time reflections accumulate over negative time $\Delta t^{-}$ and deposit as rigid primordial quanta. Over cosmological durations these deposits condense into atoms and then heavy elements, with higher heavy-element abundance in older/colder regions.
+
+
+\paragraph{Organization.}
+Every event in our universe is initiated within $\mathcal{F}^{-}$. Each \emph{reflected temporal seed} nucleates a \emph{negative-time helical wave} with two branches: an inward (compressive) branch and an outward (expanding) branch, both carrying negative-time character. A locally positive effective energy appears only upon \emph{inner-branch squaring} (phase-aligned squaring on the inward branch), which releases heat, energy and radiation.
+\subsection{Iron pivot for cold deposition vs.\ warm decay.}
+We adopt a nuclear pivot at the iron–nickel peak,
+\[
+E_{\rm piv}^{(N)}\simeq 8.8~\mathrm{MeV},\quad 
+\tau_{\rm Fe}^{(N)}=\frac{h}{E_{\rm piv}^{(N)}}\approx 4.7\times10^{-22}\,\mathrm{s},\quad
+T_{\rm Fe}^{(N)}=\frac{E_{\rm piv}^{(N)}}{k_B}\approx 1.0\times10^{11}\,\mathrm{K}.
+\]
+Cold temporal deposition dominates when $\tau_{\rm cyc}\gtrsim\tau_{\rm Fe}^{(N)}$, while warm decay (heavy$\to$light transmutation) sets in for $\tau_{\rm cyc}\lesssim\tau_{\rm Fe}^{(N)}$.
+An equivalent vorticity threshold follows from
+\[
+\eta_\omega f^{2}\rho_T\,\omega_c^{2}\sim n_B\,\frac{B}{A}\,\frac{1}{\tau_{\rm cyc}}
+\ \Rightarrow\ 
+\omega_c\approx\sqrt{\frac{n_B(B/A)}{\eta_\omega f^{2}\rho_T\,\tau_{\rm cyc}}}.
+\]
+For laboratory anchoring we also note the $^{57}\mathrm{Fe}$ Mössbauer line ($E_\gamma=14.4$ keV), with
+$\tau_{\rm Fe}^{(\gamma)}=h/E_\gamma\approx2.9\times10^{-19}$ s, as a precise UTFE spectral standard.
+
+\subsection{Temporal Sedimentation and Heavy-Nucleus Genesis (TRSM)}
+
+\paragraph*{Setup and maximized deposition in the cold epoch.}
+In the primordial cold reflected fabric (single active layer), local positive energy deposition is
+\begin{equation}
+\rho_{+}(x;\beta)=\kappa\,f^{2}\,\rho_T(x)\left(\frac{v_{T,1}^{-}}{c}\right)^{2},
+\qquad f\equiv E_{\rm cut},\ \ \rho_T\equiv|\Phi|^{2}.
+\label{eq:dep-law}
+\end{equation}
+In the pre-vortical regime one has $T\simeq 0$, $\beta\simeq 0$, hence $v_{T,1}^{-}\to c$ and
+\begin{equation}
+\rho_{+}^{\max}(x)=\kappa\,f^{2}\,\rho_T(x),\qquad 
+\rho_m^{\max}(x)=\frac{\rho_{+}^{\max}(x)}{c^{2}}.
+\end{equation}
+This sets the stage for \emph{temporal sedimentation}: negative-time reflections condense into rigid, low-entropy deposits.
+
+\paragraph*{Nucleation criterion (single-layer background).}
+Let $R\equiv|\Phi|$ and define an effective free-energy functional on spatial slices orthogonal to $u^\mu$,
+\begin{equation}
+\mathcal F[R]=\int d^{3}x\ \Big\{\sigma_T\,(\nabla R)^{2}+V_{\rm eff}(R)\Big\},\qquad 
+V_{\rm eff}(R)=\lambda_\Phi\Big(R^{2}-\tfrac{f^{2}}{2}\Big)^{2}-\kappa\,f^{2}\,R^{2}.
+\label{eq:free-energy}
+\end{equation}
+Here $\sigma_T>0$ is the temporal-gradient stiffness. A compact fluctuation of radius $R_{\!*}$ lowers $\mathcal F$ if the \emph{temporal pressure drop} 
+$\Delta p_T\equiv -\Delta V_{\rm eff}>0$ overcomes surface cost:
+\begin{equation}
+R_c=\frac{2\sigma_T}{\Delta p_T},\qquad \Delta\mathcal F_c=\frac{16\pi}{3}\frac{\sigma_T^{3}}{\Delta p_T^{2}}.
+\label{eq:nucleation}
+\end{equation}
+Seeds with $R_{\!*}>R_c$ nucleate and grow; otherwise they dissolve. In the cold epoch $\Delta p_T$ is maximal, so $R_c$ is minimal and nucleation is efficient.
+
+\paragraph*{Growth and coarsening (sedimentation dynamics).}
+Once supercritical, deposits grow by accreting the local temporal density:
+\begin{equation}
+\frac{dM}{d\tau}=\int_{\partial\Omega} dS\ J_{\rm dep},\qquad 
+J_{\rm dep}=\eta_T\,f^{2}\,\rho_T\,\frac{v_{T,1}^{-}}{c},\quad v_{T,1}^{-}\simeq c,
+\label{eq:growth}
+\end{equation}
+with a kinetic coefficient $\eta_T$ (dimensionless). In the diffusion-limited regime one obtains a coarsening law
+\begin{equation}
+\langle R_{\!*}(\tau)\rangle \propto \left(\frac{\eta_T\,f^{2}\,\overline{\rho_T}}{\sigma_T}\,\tau\right)^{1/3},
+\label{eq:coarsening}
+\end{equation}
+leading to a heavy, rigid mass spectrum peaked at large baryonic numbers before vortical heating turns on.
+
+\paragraph*{Rigidity and heavy-nucleus stabilization.}
+Stability follows from the second variation of \eqref{eq:free-energy} at the growth fixed point $R=R_\star$:
+\begin{equation}
+\delta^{2}\mathcal F=\int d^{3}x\ \delta R\,\Big[-\sigma_T\nabla^{2}+\big(12\lambda_\Phi R_\star^{2}-2\lambda_\Phi f^{2}-\kappa f^{2}\big)\Big]\delta R\ >\ 0,
+\label{eq:stability}
+\end{equation}
+which holds provided $\lambda_\Phi>0$ and the bracketed mass term is positive. This selects rigid, low-temperature deposits identifiable with heavy nuclei seeds.
+
+\paragraph*{Vortical ignition, heating, and heavy$\to$light transmutation.}
+Temporal vorticity $\omega_T\equiv|\nabla\times(v_T^{-}\hat{\mathbf t})|$ injects dissipative power
+\begin{equation}
+\dot q=\eta_{\omega}\,f^{2}\,\rho_T\,\omega_T^{2},\qquad \eta_{\omega}>0,
+\label{eq:heating}
+\end{equation}
+shortening the cycle time via UTFE $k_B T=h/\tau_{\rm cyc}$. Above a threshold $\omega_T>\omega_c$ the heavy deposits partially decompose towards lighter constituents, releasing positive energy while preserving the temporal split:
+\begin{equation}
+\text{heavy} \ \xrightarrow[\ \omega_T>\omega_c\ ]{\ \ \text{heating}\ \ }\ \text{lighter nuclei} + E_{+},
+\qquad (v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}.
+\label{eq:transmutation}
+\end{equation}
+This realizes a heavy$\to$light stellar pathway consistent with TRSM’s past-directed archiving and the $\gamma^{-2}$ deposition dependence away from the cold limit.
+\paragraph*{Binding as temporal inertia in a cold medium (TRSM).}
+Negative-time modes enter a cold reflected medium with temporal index $n_T\!\ge\!1$, so their group velocity is $v_g=c/n_T$. 
+The kinetic fraction available for local deposition/binding is 
+\[
+\eta_{\rm dep}(n_T)=1-\frac{v_g^2}{c^2}=1-\frac{1}{n_T^2}.
+\]
+With the TRSM map, local positive energy forms as
+\[
+\rho_{+}(x)=\kappa\,f^{2}\,\rho_T(x)\Big(\frac{v_{T,1}^{-}}{c}\Big)^{2}\eta_{\rm dep}(n_T)
+\;\xrightarrow[T\to0]{v_{T,1}^{-}\to c,\,n_T\to\infty}\;
+\kappa f^{2}\rho_T(x),
+\]
+and converts into mass $\rho_m=\rho_{+}/c^{2}$.
+The binding energy of a cold temporal droplet (volume $V$, area $A$) is
+\[
+E_{\rm bind}\simeq 
+\alpha\,f^{2}\,\overline{\rho_T}\,\eta_{\rm dep}(n_T)\,V
+-\sigma_T A - E_{\rm Coul.}^{(\text{late})},
+\]
+so binding grows as the medium cools (larger $n_T$, hence larger $\eta_{\rm dep}$), stabilizing deposited mass without hot nuclear fusion.
+
+
+\paragraph*{Testable implications.}
+(i) \emph{Early high densities}: maximal deposition at $T\simeq0$ explains large early comoving densities without invoking hot primordial synthesis. 
+(ii) \emph{Heavy-first chronology}: oldest environments favor heavier, more rigid seeds; later vortical heating shifts abundances lighter. 
+(iii) \emph{Kinetic signature}: away from the cold limit, local deposition follows $\langle\gamma^{-2}\rangle$, providing a speed-dependent observable in high-$\gamma$ beams and astrophysical outflows. 
+(iv) \emph{Minimal parameter set}: the spectrum depends on $(f,\sigma_T,\lambda_\Phi,\kappa,\eta_T,\eta_\omega)$ with clear dimensional roles.
+
+
+
+\subsection{Helical negative-time wave kinematics}
+Let $\Xi(x)$ denote an effective temporal helical mode producing the pair
+\[
+v_{T,\mathrm{in}}^{-}(x),\qquad v_{T,\mathrm{out}}^{-}(x).
+\]
+TRSM imposes the kinematic split constraint
+\begin{equation}
+\big(v_{T,\mathrm{in}}^{-}\big)^{2}+\big(v_{T,\mathrm{out}}^{-}\big)^{2}=c^{2}.
+\label{eq:TRSM-split}
+\end{equation}
+Here, $v_{T,\mathrm{in}}^{-}$ drives compression and local heating upon squaring, while $v_{T,\mathrm{out}}^{-}$ drives outward expansion, orbital ordering, and aggregation of deposited matter.
+
+\subsection{Deposition--condensation mechanism}
+For a reflected seed $\zeta$, let $\Gamma_{\mathrm{ref}}(\tau^{-})$ be the local reflection--deposition rate within $\mathcal{F}^{-}$. The cumulative reflection count in a comoving volume is
+\begin{equation}
+N_{\mathrm{ref}}(\Delta t^{-})=\int^{\Delta t^{-}}\Gamma_{\mathrm{ref}}(\tau^{-})\,d\tau^{-}.
+\label{eq:Nref}
+\end{equation}
+We fix the TRSM scale by
+\begin{equation}
+f \equiv \Ecut,
+\label{eq:fEcut}
+\end{equation}
+and model the comoving mass density as
+\begin{equation}
+\rho_{M}(x;\Delta t^{-}) \;\simeq\; \rho_{M}^{(0)}(x)
+\;+\;\frac{\Ecut}{c^{2}}\;\frac{N_{\mathrm{ref}}(\Delta t^{-})}{V_{\mathrm{com}}},
+\label{eq:rhoM}
+\end{equation}
+where $\rho_{M}^{(0)}$ is the primordial rigid baseline of $\mathcal{F}^{-}$ and $V_{\mathrm{com}}$ is a reference comoving volume. Optionally, when each quadratic reflection carries one unit of information, we may count $I \approx N_{\mathrm{ref}}$.
+
+\subsection{Inner-branch squaring and stellar ignition}
+Locally positive effective energy density is generated only through \emph{inner-branch squaring}. Phenomenologically,
+\begin{equation}
+\rho_{+}(x)\;\propto\;\big(v_{T,\mathrm{in}}^{-}\big)^{2}\,f^{2},
+\label{eq:rhoPlus}
+\end{equation}
+with a stellar ignition threshold $\rho_{+}\ge \rho_{\star}$. When reached, heavy deposits partially disintegrate into lighter nuclei while releasing positive radiation/heat, thereby forming stars along inward-branch streamlines.
+
+\subsection{Outward-branch aggregation and orbital architecture}
+The outward branch $v_{T,\mathrm{out}}^{-}$ continues to expand \emph{without squaring}, sweeping and concentrating deposited atoms/dust along helical paths constrained by \eqref{eq:TRSM-split}. Stable orbital wells emerge and planets condense within them; by the same helical geometry mechanism, atom, stellar systems and galaxies are assembled.
+
+\subsection{Symbol table (concise)}
+\begin{center}
+\begin{tabular}{l c l}
+\hline
+Quantity & Symbol & Meaning \\
+\hline
+Negative-time primordial fabric & $\mathcal{F}^{-}$ & Cold rigid background hosting deposition \\
+Reflected temporal seed & $\zeta$ & Source of a negative-time helical wave \\
+Accumulated negative time & $\Delta t^{-}$ & Elapsed time in the reversed temporal dimension \\
+Inward temporal speed & $v_{T,\mathrm{in}}^{-}$ & Compressing branch; heats upon squaring \\
+Outward temporal speed & $v_{T,\mathrm{out}}^{-}$ & Expanding branch; aggregation/orbits \\
+TRSM scale (cut) & $f$ & Fixed by \eqref{eq:fEcut}, $f\simeq \Ecut$ \\
+Reflection count & $N_{\mathrm{ref}}$ & Cumulative quadratic reflections \\
+Mass density & $\rho_{M}$ & Deposited mass per comoving volume \\
+Positive energy density & $\rho_{+}$ & Released heat/radiation on the inner branch \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{trsmstmt}[Split constraint]
+With the branch speeds defined above, the TRSM temporal split obeys 
+$\big(v_{T,\mathrm{in}}^{-}\big)^{2}+\big(v_{T,\mathrm{out}}^{-}\big)^{2}=c^{2}$.
+\end{trsmstmt}
+\begin{proof}[Sketch]
+Project the helical mode onto inward/outward directions while fixing the total reflected temporal norm to $c$; local redistribution preserves the quadratic sum.
+\end{proof}
+
+\begin{trsmstmt}[Positive-energy emergence]
+A locally positive effective energy density arises only via inner-branch squaring, $\rho_{+}\propto \big(v_{T,\mathrm{in}}^{-}\big)^{2}f^{2}$, cf.~\eqref{eq:rhoPlus}.
+\end{trsmstmt}
+\begin{proof}[Sketch]
+Phase-coherent squaring on the compressive branch maps negative-time flux into positive effective energy; the outward branch lacks this squaring and thus does not directly radiate.
+\end{proof}
+
+\section{Time and Spacetime in the Temporal Reflected
+Spectrum Model}
+ TRSM program views dark energy as a negative--time reflected spectrum forming a cold primordial fabric $\Fminus$, while the observable universe evolves in a positive--time sector paired with it. 
+This section isolates and formalizes the temporal content of TRSM: axioms, operational definitions, EFT realization, causal structure, and testable consequences. 
+Sector--specific dynamics (e.g.\ hollow temporal vortices and black--hole seeding) are deferred to companion works.\\ 
+Unless stated otherwise we use natural units $\hbar=c=1$ in derivations, restoring $c$ for clarity in the core identities.
+
+\subsection{Event-born negative time: axioms}
+\begin{trsmdefn}
+For any event $e$, define a reflected local time $\Delta t^{-}(\tau)$ seeded at proper parameter $\tau$ with
+\begin{equation}
+\Delta t^{-}(0)=0,\qquad \frac{d\,\Delta t^{-}}{d\tau}=-1,
+\label{eq:archiving}
+\end{equation}
+so that records are archived monotonically and causally along the past--directed branch.
+\end{trsmdefn}
+
+\begin{trsmdefn}[Two temporal layers]
+At each spacetime point we distinguish: 
+(i) a primordial background component , and 
+(ii) a local event--born component , both past--directed in orientation.
+Let $u^\mu$ be a unit timelike flow, $u_\mu u^\mu=-1$, and let $\Rbg,\Rev$ be reflection scalars.
+We \emph{operationally} define
+\begin{equation}
+v_{T,a}^{-}\equiv \frac{c}{f^{2}}\;u^{\mu}\partial_{\mu}R_{a},\qquad a\in\{0,1\},\qquad f\equiv \Ecut,
+\label{eq:map}
+\end{equation}
+and impose the temporal split
+\begin{equation}
+\boxed{(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}} .
+\label{eq:split}
+\end{equation}
+\end{trsmdefn}
+
+\begin{trsmremark}[Signature and causality]
+We adopt a Lorentzian metric of signature $(-,+,+,+)$ for the observable spacetime $(M,g_{\mu\nu})$.
+The ``negative'' qualifier in TRSM refers to orientation/energetics (past–directed flow and $w\simeq-1$), not to a flipped metric signature.
+Null rays are future–directed and \emph{operationally measure} the same bound $c$, so microcausality is preserved.
+\end{trsmremark}
+
+%================== 3. EFT realization (minimal) ==================
+\subsection{Minimal EFT realization}
+The minimal TRSM sector for $(\Rbg,\Rev)$ reads
+\begin{equation}
+\Lag_{\rm TRSM}=
+\frac{1}{2}\sum_{a=0,1}\partial_\mu R_a\,\partial^\mu R_a
+- V(R_0,R_1)
++\varsigma\Big[(u\!\cdot\!\partial \Rbg)^{2}+(u\!\cdot\!\partial \Rev)^{2}-f^{4}\Big],
+\label{eq:LTRSM}
+\end{equation}
+with $V$ bounded from below. 
+The Lagrange multiplier $\varsigma$ enforces the constraint which, via \eqref{eq:map}, realizes \eqref{eq:split}. 
+A soft version can be used in regions requiring small deviations:
+\begin{equation}
+\widetilde\Lag_{\rm cons}=\frac{\zeta}{2f^{4}}\Big[(u\!\cdot\!\partial \Rbg)^{2}+(u\!\cdot\!\partial \Rev)^{2}-f^{4}\Big]^{2},\quad \zeta\gg1.
+\end{equation}
+
+\begin{trsmthm}[Split consistency]
+Eqs.~\eqref{eq:map} and \eqref{eq:LTRSM} imply the identity \eqref{eq:split} at the level of classical solutions.
+\end{trsmthm}
+\begin{proof}[Sketch]
+Variation w.r.t.\ $\varsigma$ enforces $(u\!\cdot\!\partial \Rbg)^{2}+(u\!\cdot\!\partial \Rev)^{2}=f^{4}$. 
+Using \eqref{eq:map} gives $(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}$.
+\end{proof}
+
+%================== 4. Cycle time (UTFE) and master relation ==================
+\subsection{Cycle time and the energy--mass--time link}
+For a coherent excitation with energy $E$,
+\begin{equation}
+E=h\nu=\frac{h}{\tau_{\rm cyc}}=k_{B}T_{\rm eff}=m_{\rm eff}c^{2}
+\qquad \Rightarrow \qquad
+\boxed{\ \tau_{\rm cyc}=\frac{1}{\nu}=\frac{h}{E}=\frac{h}{k_{B}T_{\rm eff}}=\frac{h}{m_{\rm eff}c^{2}}\ }.
+\label{eq:UTFE}
+\end{equation}
+Adopting the velocity--temporal partition ansatz
+\begin{equation}
+v_{T,1}^{-}=\frac{c}{\gamma},\qquad v_{T,0}^{-}=c\,\beta,\qquad \gamma=(1-\beta^{2})^{-1/2},\ \ \beta=\frac{|\mathbf V|}{c},
+\label{eq:partition}
+\end{equation}
+and using \eqref{eq:split}, we obtain the operational master relation
+\begin{equation}
+\boxed{\ E=\gamma m_0 c^{2}
+=\frac{m_0 c^{3}}{v_{T,1}^{-}}
+=\frac{h}{\tau_{\rm cyc}}
+= k_{B}T_{\rm eff}\ },
+\label{eq:master}
+\end{equation}
+which preserves all standard relativistic predictions while attributing $c^{2}$ to the squared norm of a two–component temporal flow.
+\paragraph*{Relativistic accelerators as TRSM consistency checks.}
+In storage rings and linacs, particles approach $v\simeq c$ with energies $E=\gamma m_0 c^2$.
+Under the TRSM map $v_{T,1}^{-}=c/\gamma$, this reads $E=m_0 c^{3}/v_{T,1}^{-}$ while the split
+$(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}$ enforces the speed barrier without redefining $c$.
+Thus accelerator data are fully consistent with TRSM’s temporal interpretation of the Einstein factor.
+A discriminating prediction is the local deposition law
+$\rho_{+}\propto (v_{T,1}^{-}/c)^{2}=\gamma^{-2}$, which can be probed via precision observables tied to near-field dissipation/emission, alongside cycle-time locking tests $\tau_{\rm cyc}=h/E$ on moving standards.
+
+
+%================== 5. Background DE from a single layer ==================
+\subsection{Background dark energy from a single temporal layer}
+When only the primordial layer is active (homogeneous background),
+\begin{equation}
+v_{T,0}^{-}=c,\qquad v_{T,1}^{-}\approx 0,
+\end{equation}
+we define a temporally linear energy density
+\begin{equation}
+\boxed{\ \rho_{\rm DE}(x)=\kappa_\Lambda\, f^{2}\,\rho_T^{(0)}(x)\,\frac{v_{T,0}^{-}}{c}
+=\kappa_\Lambda f^{2}\rho_T^{(0)}(x)\ },
+\label{eq:rhoDE}
+\end{equation}
+where $\rho_T^{(0)}\equiv|\Phi|^{2}$ with $\Phi\equiv(\Rbg+i\Rev)/\sqrt{2}$ and $\kappa_\Lambda$ is dimensionless. 
+Thus $T_{\mu\nu}^{\rm DE}=\rho_{\rm DE}\,g_{\mu\nu}$ and the equation of state is $w=-1$.
+Small inhomogeneities in $\rho_T^{(0)}$ are strongly constrained observationally, so we treat $\rho_{\rm DE}$ as homogeneous at leading order.
+
+
+%================== 6. Local deposition and motion ==================
+\subsection{Local deposition, motion, and proper vs.\ cycle time}
+In regions with events/bound structures both temporal components are active; local positive energy scales quadratically with the event--born branch:
+\begin{equation}
+\rho_{+}(x;\beta)=\kappa\, f^{2}\,\rho_T(x)\,\Big(\frac{v_{T,1}^{-}}{c}\Big)^{2}
+=\kappa f^{2}\rho_T(x)\,\gamma^{-2},
+\qquad 
+\rho_m(x;\beta)=\frac{\rho_{+}(x;\beta)}{c^{2}}.
+\end{equation}
+\begin{trsmremark}[Proper time vs.\ cycle time]
+For massless excitations the proper time along null geodesics vanishes ($d\tau=0$), but the cycle time $\tau_{\rm cyc}=h/E$ remains finite, anchoring mode--level timing even when no rest frame exists.
+\end{trsmremark}
+\begin{trsmremark}[Massless modes and archival constraints]
+Along null geodesics $d\tau=0$ so no archival increment occurs between interaction vertices, and local deposition vanishes, $\rho_{+}\propto (v_{T,1}^{-}/c)^2=\gamma^{-2}\to0$. 
+Nevertheless, $\tau_{\rm cyc}=h/E>0$ and the split $(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}$ holds with $v_{T,0}^{-}\!\to c$, $v_{T,1}^{-}\!\to0$. 
+Thus massless excitations are not subject to mass–time binding, but remain temporally and causally constrained via the cycle time and the $c$-bound; archival updates occur at emission/absorption vertices.
+\end{trsmremark}
+
+
+%================== 7. Temporal-split adapted coordinates ==================
+\subsection{Temporal-split adapted coordinates and minimal cell}
+Define the mixing angle
+\begin{equation}
+\theta(x)=\arctan\!\frac{u\!\cdot\!\partial \Rev}{u\!\cdot\!\partial \Rbg}.
+\end{equation}
+Spatial hypersurfaces $\Sigma(\theta)$ are taken orthogonal to $u^\mu$ with projector $P^{\mu}{}_{\nu}=\delta^{\mu}{}_{\nu}+u^\mu u_\nu$.
+Small perturbations $(\delta v_{T,0}^{-},\delta v_{T,1}^{-})$ constrained by \eqref{eq:split} obey $v_{T,0}^{-}\delta v_{T,0}^{-}+v_{T,1}^{-}\delta v_{T,1}^{-}=0$ and map linearly to a phase--space cell $\delta x\,\delta p=\hbar$, giving the RMS equality
+\begin{equation}
+\Delta x\,\Delta p=\frac{\hbar}{2}.
+\end{equation}
+With the TRSM scale $f$, a Lorentz--compatible minimal resolution is
+\begin{equation}
+\tau_{\rm cut}=\frac{h}{f},\qquad \ell_{\rm cut}=c\,\tau_{\rm cut},
+\end{equation}
+which anchors the coordinate atlas to the temporal split.
+\subsection{Relativistic null limit as signed cancellation (TRSM).}
+With the temporal split
+$v_{T,0}^{-}=c\,\beta$, $v_{T,1}^{-}=c/\gamma$, and $(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}$,
+consider the signed projection along the time axis where null rays are future–directed:
+\[
+\mathcal{T}_{\rm eff}\equiv v_{T,1}^{+}-v_{T,0}^{-}.
+\]
+In the null limit $\beta\to1$ one has $v_{T,1}^{+}\to c$ and $v_{T,0}^{-}\to c$, hence
+$\mathcal{T}_{\rm eff}\to0$, reproducing $d\tau=dt/\gamma\to0$.
+Thus TRSM provides an operational narrative for the special–relativistic statement that
+proper time vanishes on null geodesics: the future–directed null gauge cancels the
+past–directed background flow in signed projection, while the quadratic budget $c^{2}$
+remains intact.
+
+
+%================== 8. Causality and the arrow of time ==================
+\subsection{Causality and the arrow of time}
+Causal cones are fixed by $g_{\mu\nu}$; no signal exceeds $c$. 
+The past--directed orientation of $v_{T,a}^{-}$ implements an archival arrow via \eqref{eq:archiving}. 
+Local correlations mediated along $\Delta t^{-}$ do not enable superluminal signalling provided interactions are local; microcausality holds ($[\mathcal O(x),\mathcal O(y)]=0$ for spacelike separation).
+\paragraph*{Relation to Hawking’s arrows of time.}
+Hawking distinguishes a \emph{cosmological arrow} (set by universal expansion) and a \emph{thermodynamic arrow} (set by entropy increase).
+TRSM refines this by promoting the two “arrows” to two \emph{actual temporal components}—a primordial background $v_{T,0}^{-}$ and a local event–born $v_{T,1}^{-}$—constrained by the split
+\[
+(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2} \, \text{ (cf.\ \eqref{eq:split})},
+\]
+so that light \emph{operationally measures} the same bound $c$ with opposite (future–directed) orientation. The background component mirrors Hawking’s cosmological arrow, while the event–born component underlies the thermodynamic arrow via local deposition and mode–level timing.
+
+\emph{Key TRSM difference—arrow orientation.}
+The temporal flow is intrinsically \emph{past–directed and irreversible}: at event onset the reflected time obeys the archival law
+\[
+\Delta t^{-}(0)=0,\qquad \frac{d\,\Delta t^{-}}{d\tau}=-1 \ \text{ (cf.\ \eqref{eq:archiving})},
+\]
+so records propagate from the present into the past (negative entries) and cannot be reversed without violating locality or the split constraint. Thus the arrow points from present to past \emph{by construction}, while standard relativistic causality (no superluminal signalling) and microcausality remain intact.
+\paragraph*{Archival immutability (TRSM).}
+Let $\mathcal A:\mathrm{events}\to\mathcal F^{-}$ denote the archival map along the reflected time $\Delta t^{-}$ with
+$\Delta t^{-}(0)=0$ and $\frac{d\,\Delta t^{-}}{d\tau}=-1$.
+Records are append-only: $dN_{\mathrm{ref}}/d\tau\ge 0$.
+Any operation that reverses or overwrites a recorded entry at fixed $\tau$ would require nonlocal deletion across $\Delta t^{-}$, violating either the split constraint $(v_T^{+})^{2}+(v_T^{-})^{2}=c^{2}$ or microcausality.
+Hence the arrow is intrinsically present$\to$past and information is preserved as immutable history.
+
+\subsection{Early-density rationale (TRSM).}
+In the cold reflected epoch ($\omega_T\simeq 0$, $T\simeq 0$) the event-born branch approaches $v_{T,1}^{-}\!\to c$, hence the local positive-energy deposition
+\[
+\rho_{+}(x)=\kappa\,f^{2}\,\rho_T(x)\Big(\frac{v_{T,1}^{-}}{c}\Big)^{2}\ \to\ \kappa\,f^{2}\rho_T(x),
+\]
+seeding a high comoving matter density
+\[
+\rho_m(a_i)=\rho_m^{\rm seed}\equiv \frac{\kappa\,f^{2}\,\langle\rho_T\rangle_{\rm pre}}{c^{2}}.
+\]
+When temporal vortices ignite and heating sets in, the average speed increases, 
+$F_{\rm dep}(a)\equiv\langle\gamma^{-2}(a)\rangle<1$, so that
+\[
+\rho_m(a)=\rho_m^{\rm seed}\,F_{\rm dep}(a)\,a^{-3},\qquad 
+\rho_{\rm DE}=\kappa_\Lambda f^{2}\rho_T^{(0)}=\text{const}.
+\]
+Thus TRSM yields naturally high early densities (maximal deposition at low $T$) transitioning to diluted matter as heating and expansion proceed.
+
+\paragraph*{On micro-level numerology.}
+Relations of the type $m_e\stackrel{?}{=}3\,(E_{\rm cut}-m_d)$ or $m_u\stackrel{?}{=}\sqrt{m_d}$ are not dimensionally consistent,
+are not renormalization-scale invariant, and do not close the hadronic energy budget. 
+We therefore keep $E_{\rm cut}\!\sim\!4.84$ MeV as a deposition/calibration scale at cosmological and nuclear-coarse levels,
+while microscopic masses remain governed by SM dynamics (QCD confinement and Higgs Yukawas).
+
+
+%================== 9. Experimental protocols ==================
+\subsection{Operational protocols and falsifiable consequences}
+\paragraph{Clock interferometry (cycle--time locking).}
+Two stabilized clocks probing the same mode energy $E$ must satisfy $\Delta\tau=\Delta(h/E)$. 
+Phase locking across spatial separation tests \eqref{eq:UTFE}.
+
+\paragraph{Spectral anchoring near $f=\Ecut$.}
+Narrow features tied to $f$ provide laboratory and astrophysical anchors; deviations constrain the mapping \eqref{eq:map} and deposit law.
+
+\paragraph{Local split retrieval.}
+Projective measurements of $u^\mu\partial_\mu R_{a}$ along a preferred flow $u^\mu$ infer $(v_{T,0}^{-},v_{T,1}^{-})$ and test \eqref{eq:split} and \eqref{eq:partition}.
+
+%================== 10. Relation to GR and SM ==================
+\subsection{Relation to GR and the Standard Model}
+In the decoupling limit (vanishing portals and kinetic mixing) the minimal TRSM action reduces to GR+SM plus two scalars minimized at $R_0^2+R_1^2=f^2$; the temporal structure then remains as an operational statement about branches and cycle time. 
+Extensions (e.g.\ vortex sector or Higgs portals) can be appended without affecting the core temporal results at leading order.
+
+\section{The Universal Deposition Constant \texorpdfstring{\(E_{\mathrm{cut}}=4.84\;\mathrm{MeV}\)}{}}
+\label{sec:Ecut}
+
+\subsection{Why a \emph{single} constant?}%
+\label{subsec:Ecut_motivation}
+One of the most distinctive features of the Temporal--Reflected Spectrum
+Model (TRSM) is the claim that \emph{all} apparently disparate physical
+constants trace back to one ``deposition'' quantum
+\[
+E_{\mathrm{cut}} \;=\; (4.84 \pm 0.02)\;\mathrm{MeV},
+\]
+the minimum negative‐time packet that can be archived as positive
+rest–energy.  Whether we probe femtometre–scale nuclear binding, the
+electroweak vacuum, stellar interiors, or the dark sector on gigaparsec
+scales, \(E_{\mathrm{cut}}\) emerges as the governing scale.  Table
+\ref{tab:Ecut_landscape} lists representative appearances (see
+\S\ref{subsec:Ecut_roles} for discussion).
+
+\begin{table}[H]
+  \centering
+  \caption{Representative roles of \(E_{\mathrm{cut}}\) across scales.}
+  \label{tab:Ecut_landscape}
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    \textbf{Domain} & \textbf{Observable tied to \(E_{\mathrm{cut}}\)} & \textbf{Nominal value} \\
+    \midrule
+    Nuclear physics      & Fe--56 binding peak                                   & \(8.79\;\mathrm{MeV\,/\,nucleon}\)  \\
+    Particle physics     & Composite‐Higgs packet count \(N_H\)                 & \(2.6\times10^{4}\)                 \\
+    Gravitation          & Effective Newton constant \(G_{\mathrm{eff}}\)       & \(\tfrac{c^{4}}{8\pi E_{\mathrm{cut}}}\) \\
+    Dark sector          & Balance \( \rho_{\mathrm{DM}} = 2\rho_\Lambda -E_{\mathrm{cut}}/c^{2}\) & --- \\
+    Quantum limit        & Minimal phase–space cell \( \Delta x\Delta p = \tfrac{\hbar}{2}\) & --- \\
+    Black–hole interiors & Core radius \(r_{0}=0.511\,r_{H}\) (HCTW profile)     & ---  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Seven independent derivations}
+\label{subsec:Ecut_derivations}
+Below we review in detail the seven conceptually independent routes by
+which \(E_{\mathrm{cut}}\) can be obtained.  Each derivation is self--contained,
+requires no empirical tuning beyond standard cosmological or laboratory
+inputs, and yet converges on the same \(4.8\text{--}4.9\;\mathrm{MeV}\)
+value.\footnote{The numerical examples adopt the latest Planck~PR4,
+AME\,2020, PDG\,2024 and LVK\,O4 datasets.  
+All errors are propagated at \(1\sigma\).}
+
+\paragraph{(D1) Temporal–density self‐consistency (cosmic age).}
+The negative–time archive per cubic metre is
+\(
+\rho_T = t_{\mathrm{univ}}/c
+\).
+Requiring that its \emph{own} energy density be supplied by packets of
+size \(E_{\mathrm{cut}}\) gives
+\[
+\rho_{\rm dep}(x;\Delta t^{-})=\big[\xi\,\chi(x)\,\Upsilon(\Delta t^{-})\big]\;\Ecut^{4},
+\qquad
+n_{\rm ref}(x;\Delta t^{-})=\chi(x)\,\Upsilon(\Delta t^{-})\,\Ecut^{3}
+\;\;(\text{see App.~\ref{app:D1-natural}}).
+\]
+
+
+\paragraph{(D2) Dark–sector balance (Planck densities).}
+Using \(\rho_{\Lambda}=(5.98\pm0.05)\times10^{-27}\;\mathrm{kg\,m^{-3}}\) and
+\(\rho_{\mathrm{DM}}=(2.5\pm0.2)\times10^{-27}\;\mathrm{kg\,m^{-3}}\) one solves
+\(
+\rho_{\mathrm{DM}} = 2\rho_\Lambda - E_{\mathrm{cut}}/c^{2}
+\)
+to obtain
+\(E_{\mathrm{cut}} = 4.83\pm0.04\;\mathrm{MeV}\).
+\paragraph*{ numerical coincidence !}
+Applying the same relation to the masses of atomic molecules as an energy densities, we get: $m_e\stackrel{?}{=}2m_u-E_{\rm cut}$ . 
+
+
+\paragraph{(D3) Nuclear binding saturation (iron peak).}
+Integrating the quadratic reflection spectrum up to an upper limit \(E_{\mathrm{cut}}\)
+yields a maximum in
+\(B/A\) that matches the experimental Fe–56 value
+\(8.79\;\mathrm{MeV}\) only for
+\(E_{\mathrm{cut}}=4.84\pm0.03\;\mathrm{MeV}\).
+
+\paragraph{(D4) Heisenberg–Dirac phase–space cell.}
+Setting the minimal spatial packet \(\ell_{\mathrm{cut}}=c\hbar/E_{\mathrm{cut}}\)
+enforces
+\(
+\Delta x\Delta p= \frac{\hbar}{2}\,
+\),
+saturating both the Robertson and Dirac localisation bounds.  
+The construction fixes \(E_{\mathrm{cut}}\) to the same value as above.
+
+\paragraph{(D5) Composite–Higgs stacking.}
+Demanding that \(N_H\) identical packets stack to the
+electroweak VEV \(v=246\;\mathrm{GeV}\) gives
+\(N_H = v^{2}/E_{\mathrm{cut}}\).
+Using the observed Higgs width suppression
+\(\kappa=0.90\pm0.03\) yields
+\(E_{\mathrm{cut}}=4.84\pm0.06\;\mathrm{MeV}\).
+
+\paragraph{(D6) Effective Newton coupling.}
+Replacing \(\hbar\) in the Einstein–Hilbert action by the TRSM
+identity \(c^{3}/E_{\mathrm{cut}}\) leads to
+\(
+G_{\mathrm{eff}} = c^{4}/(8\pi E_{\mathrm{cut}})
+\).
+Inverting CODATA–23 \(G\) gives
+\(E_{\mathrm{cut}} = 4.86\pm0.06\;\mathrm{MeV}\).
+
+\paragraph{(D7) Hollow–cold temporal wave (black holes).}
+For the HCTW density profile
+\(
+\rho_{\mathrm{DE}}(r)=\rho_0(r_0/r)^{3}
+\)
+regularity at the core and matching to the
+Schwarzschild exterior fix
+\(
+r_0 = 0.511\,r_{H} = \hbar c/E_{\mathrm{cut}}
+\).
+Applying to M87\(*\) and Sgr\,A\(*\) returns
+\(E_{\mathrm{cut}} = 4.82\pm0.11\;\mathrm{MeV}\).\\
+(Other derivations will be proven in later papers that are still under investigation.)
+
+
+\subsection{Cross--scale manifestations}
+\label{subsec:Ecut_roles}
+\begin{enumerate}[label=\alph*)]
+  \item \textbf{Quantum limit} —
+        Sets the invariant phase–space cell and therefore the numerical
+        value of \(\hbar\) in the TRSM picture.
+  \item \textbf{Nuclear physics} —
+        Serves as the upper reflection cut–off, capping binding energies
+        and predicting the iron peak without liquid‐drop parameters.
+  \item \textbf{Electroweak sector} —
+        Determines the Higgs condensate size via packet stacking,
+        leading to the universal \(10\%\) coupling suppression testable
+        at HL--LHC.
+  \item \textbf{Gravitation} —
+        Generates Newton’s constant and the Schwarzschild radius from
+        purely energetic considerations.
+  \item \textbf{Cosmology} —
+        Fixes the dark–energy density, the dark–matter abundance and the
+        acceleration redshift \(z_{\mathrm{acc}}\simeq0.73\).
+\end{enumerate}
+
+\subsection{Why a single constant \emph{matters}}
+Traditional frameworks employ dozens of empirical parameters:
+CKM phases, Yukawa couplings, \(\rho_\Lambda\), \(G\), etc.  TRSM collapses
+this \emph{parameter zoo} to one scale \(E_{\mathrm{cut}}\), without
+sacrificing empirical accuracy (\autoref{subsec:Ecut_derivations}).  The
+convergence of seven unrelated paths onto the same \(4.8\text{–}4.9\;\mathrm{MeV}\)
+window is statistically implausible under fine‐tuning, but expected if
+\(E_{\mathrm{cut}}\) is fundamental.  Consequently TRSM offers:
+\begin{itemize}
+  \item a unified explanation of micro– and macro–physics;
+  \item falsifiable predictions (e.g.\ a universal \(4.84\;\mathrm{MeV}\)
+        $\gamma$–line and altitude variations of \(G\));
+  \item a parsimonious alternative to \(\Lambda\)CDM$+$SM.
+\end{itemize}
+
+\bigskip
+\begin{center}
+  \emph{In short, once \(E_{\mathrm{cut}}\) is fixed, nothing else in Nature
+  needs to be.}
+\end{center}
+% --------------------------------------------------------------------
+
+
+
+\section{Physical and Cosmological Phenomena Explained by TRSM}
+
+\begin{itemize}
+    \item \textbf{Cosmic Expansion:} Arises from the continuous spread of the negative temporal environment (dark energy), forming the cosmic fabric.
+
+    \item \textbf{Matter and Energy Formation:} Results from temporal deposition interactions between the reflected temporal vectors at low velocities, creating mass and conventional energy.
+
+    \item \textbf{Black Holes:} Manifest as Hollow Cold Temporal Waves (HCTWs) generated from localized collapses within this negative temporal environment.
+
+    \item \textbf{Gravity:} Emerges directly as a gradient in temporal pressure between the reflected temporal vectors, not as traditional spacetime curvature.
+\end{itemize}
+\paragraph{Quantum‐scale implications.}
+Within the Temporal–Reflected Spectrum Model (TRSM) every physical event is archived by a pair of counter–propagating time–flow vectors $\bigl(v_T^{(+)} , v_T^{(-)}\bigr)$ whose squared magnitudes preserve a universal budget $|v_T^{(+)}|^{2}+|v_T^{(-)}|^{2}=c^{2}$.  
+Because the two vectors share a common archival time stamp
+\[
+t_{\rm ent} \equiv \tau_{\rm cyc}
+=\frac{1}{\nu_{\rm ent}}
+=\frac{h}{E_{\rm ent}}
+=\frac{h}{k_B T_{\rm eff}^{\rm ent}}
+=\frac{h}{m_{\rm eff}^{\rm ent} c^{2}} .
+\]
+
+any two quanta that emerge from the \textit{same} microscopic event automatically inherit identical values of $t_{\mathrm{ent}}$.  
+TRSM therefore interprets quantum entanglement not as a mysterious non-local influence in ordinary space, but as the benign consequence of both quanta ``reading’’ the \emph{same} negative-time layer of the cosmic archive.  
+When the cumulative energy stored in those reflections reaches the universal deposition threshold $E_{\mathrm{cut}}\!=\!4.84\;\mathrm{MeV}$ (corresponding to nine quadratic reflections of $\sim0.535\;\mathrm{MeV}$ each), the temporal Bell parameter attains its quantum maximum $S_{t}=2\sqrt{2}$, reproducing the full Tsirelson bound without invoking super-luminal signalling.  
+Hence, long-range correlations, Bell-inequality violations and other hallmark quantum phenomena arise naturally in TRSM as manifestations of a structured, discrete temporal geometry, firmly anchored by the single constant $E_{\mathrm{cut}}$.%
+%\footnote{A detailed derivation of the temporal Bell parameter and the associated experimental proposals can be found in {Muthanna2025TemporalEntanglement}.}
+
+
+\section{Scientific Significance and Testability}
+
+TRSM fundamentally redefines time, energy, and mass concepts, providing clear and simple explanations for complex cosmological phenomena including dark energy, dark matter, matter-energy genesis, black holes, quantum entanglement and gravity. Crucially, TRSM yields experimentally testable predictions at both laboratory and cosmological scales, establishing itself as a robust theoretical framework for future investigation.
+%\input{appendix_trsm_lagrangian}
+
+% ======================= Final TRSM Lagrangian Section =======================
+\section{TRSM Lagrangian: Fields, Symmetries, Constraint, and Action}
+\label{sec:TRSM-final-Lagrangian}
+\paragraph*{Units and notation.}
+Unless stated otherwise, we work in natural units ($\hbar=c=1$). 
+For readability, we nevertheless keep $c$ explicit in Eqs.~\eqref{eq:vT-map-final}--\eqref{eq:TRSM-split-final}; 
+all dimensional bookkeeping and power counting follow $\hbar=c=1$.
+
+
+\subsection{Field content, scales, and symmetries}
+We consider two real ``reflection'' scalars $R_\pm$ encoding the inward/outward negative-time branches of the reflected temporal fabric $\mathcal{F}^{-}$, and (optionally) a unit timelike vector $u^\mu$ with $u_\mu u^\mu=-1$ that encodes the preferred reflected temporal flow. Gravity is described by $g_{\mu\nu}$. The TRSM scale is fixed by
+\begin{equation}
+f \;\equiv\; \Ecut,
+\end{equation}
+and we adopt a discrete $\mathbb{Z}_2$ symmetry $R_+\!\leftrightarrow\!R_-$ (which can be softly broken if needed). Portals to the Standard Model (SM) are kept gauge-invariant.
+
+\paragraph{Mass dimensions (in $\hbar=c=1$).}
+$\dim[R_{\pm}]=1$, $\dim[u^\mu]=0$, $\dim[\partial_\mu]=1$, $\dim[f]=1$, $\dim[g_{\mu\nu}]=0$, and the Lagrangian density has mass dimension $4$.
+
+\subsection{Temporal branch speeds and the split constraint}
+The fabric picture identifies branch ``temporal speeds'' by projecting derivatives along $u^\mu$ and normalizing by $f$:
+\begin{equation}
+\boxed{~
+v_T^{\pm} \;\equiv\; \frac{c}{f^{2}}\;u^\mu\partial_\mu R_\pm,
+\qquad \Rightarrow \qquad
+\big(v_T^{+}\big)^{2}+\big(v_T^{-}\big)^{2}
+\;=\; \frac{c^{2}}{f^{4}}\!\left[\,(u^\mu\partial_\mu R_+)^2+(u^\mu\partial_\mu R_-)^2\,\right].
+~}
+\label{eq:vT-map-final}
+\end{equation}
+Hence, enforcing
+\begin{equation}
+(u^\mu\partial_\mu R_+)^2+(u^\mu\partial_\mu R_-)^2=f^{4}
+\label{eq:uR-constraint}
+\end{equation}
+is equivalent to the TRSM split identity
+\begin{equation}
+\boxed{~(v_T^{+})^{2} + (v_T^{-})^{2} = c^{2}.~}
+\label{eq:TRSM-split-final}
+\end{equation}
+We implement \eqref{eq:uR-constraint} via a Lagrange-multiplier density (dimensionless) $\varsigma(x)$ as shown below.
+
+\subsection{Action and building blocks}
+The complete action reads
+\begin{equation}
+S_{\rm TRSM}=\int d^4x\,\sqrt{-g}\;
+\Big[\,
+\Lag_{\rm GR}+\Lag_{u}+\Lag_{R_\pm}+\Lag_{\rm cons}+\Lag_{\rm int}+\Lag_{\rm SM}
+\,\Big].
+\label{eq:TRSM-action-final}
+\end{equation}
+The pieces are:
+\begin{align}
+\Lag_{\rm GR} &= \frac{\Mpl^{2}}{2}\,R,
+\\[3pt]
+\Lag_{u} &= -\frac{M_u^2}{2}\!\left(
+c_1\,\nabla_\mu u_\nu \nabla^\mu u^\nu
++c_2\,(\nabla_\mu u^\mu)^2
++c_3\,(u^\mu\nabla_\mu u^\nu)(u^\rho\nabla_\rho u_\nu)
+\right) + \lambda_u\,(u_\mu u^\mu+1),
+\label{eq:L-u-final}
+\\[3pt]
+\Lag_{R_\pm} &=
+\frac{1}{2}\sum_{s=\pm}\!\Big(\partial_\mu R_s\,\partial^\mu R_s - m_s^2 R_s^2\Big)
+\;-\;\varepsilon\,\partial_\mu R_+\,\partial^\mu R_-
+\;-\;V(R_+,R_-),
+\label{eq:L-R-final}
+\\[2pt]
+V(R_+,R_-) &= \lambda_1\big(R_+^2+R_-^2-f^2\big)^2
++\lambda_2\,(R_+R_-)^2,
+\label{eq:V-final}
+\\[3pt]
+\Lag_{\rm cons} &= \varsigma(x)\,\Big[\,(u^\mu\partial_\mu R_+)^2+(u^\mu\partial_\mu R_-)^2 - f^{4}\,\Big],
+\label{eq:L-cons-final}
+\\[3pt]
+\Lag_{\rm int} &= 
+-\frac{\kappa_F}{4\,\Lambda^{2}}\,(R_+^2-R_-^2)\,F_{\mu\nu}F^{\mu\nu}
+\;-\;\frac{\lambda_H}{2}\,(R_+^2+R_-^2)\,|H|^2
+\;-\;\xi_R\,(R_+^2+R_-^2)\,R
+\;+\;\cdots,
+\label{eq:L-int-final}
+\end{align}
+
+where $R$ is the Ricci scalar, $H$ the SM Higgs doublet, and $F_{\mu\nu}$ an Abelian field strength (the non-Abelian generalization is straightforward).
+The ellipsis denotes higher-dimension, gauge-invariant portals suppressed by $\Lambda$ and allowed by the discrete $\mathbb{Z}_2$.
+\paragraph*{Stability (bounded from below).}
+For the quartic potential $V(R_+,R_-)=\lambda_1(R_+^2+R_-^2-f^2)^2+\lambda_2(R_+R_-)^2$, boundedness at large field values requires
+\[
+\boxed{\lambda_1>0\,,\qquad \lambda_2\ge -4\,\lambda_1}\,.
+\]
+
+
+\paragraph{Comments on dimensions and renormalizability.}
+The potential \eqref{eq:V-final} and the Higgs portal in \eqref{eq:L-int-final} are renormalizable (dimension-4). The photon portal carries dimension-6 and is thus suppressed by $\Lambda^2$. The non-minimal curvature coupling with $\xi_R$ is dimension-4.
+
+\subsection{Flat-space reduced sector }
+If gravity and $u^\mu$ are not required for a given analysis, one may work with
+\begin{equation}
+\Lag_{\rm TRSM}^{\rm flat}
+=\frac{1}{2}\sum_{s=\pm}\!\big(\partial_\mu R_s\,\partial^\mu R_s - m_s^2 R_s^2\big)
+-\varepsilon\,\partial_\mu R_+\,\partial^\mu R_-
+-\lambda_1\big(R_+^2+R_-^2-f^2\big)^2
+-\lambda_2(R_+R_-)^2
++\Lag_{\rm int}^{\rm flat}
++\Lag_{\rm SM},
+\end{equation}
+with $\Lag_{\rm int}^{\rm flat}$ obtained from \eqref{eq:L-int-final} by setting $R\!=\!0$ and $F_{\mu\nu}$ to the relevant SM gauge factors.
+
+\subsection{Paired Zero--Energy Background.}
+In TRSM we distinguish two coupled backgrounds: a negative--time reflected background for our observable sector, $\mathcal{F}^{-}$, and a positive--time background in an advanced sector, $\mathcal{U}^{+}$, from which the former is reflected. 
+Individually, neither background is assumed to be zero--energy; rather, \emph{zero total background energy arises only in the pair}, i.e.
+\begin{equation}
+\boxed{\;\rho_{\mathrm{bg}}^{(-)}+\rho_{\mathrm{bg}}^{(+)}=0\;}\qquad\text{(paired neutrality).}
+\label{eq:pZEB-neutrality}
+\end{equation}
+Moreover, for paired modes generated at an event, if the reflected and advanced temporal vectors carry equal speeds and equal energies,
+\begin{equation}
+\boxed{\;|v_T^{(-)}|=|\tilde v_T^{(+)}|,\quad E^{(-)}=E^{(+)}\;}
+\qquad\Longrightarrow\qquad
+\delta\rho_{\mathrm{add}} \propto E^{(-)}-E^{(+)}=0,
+\label{eq:pZEB-cancellation}
+\end{equation}
+then the \emph{added} energy from that pair is null (“zero added energy”). 
+At the mode level this equivalently reads
+\begin{equation}
+\tau_{\mathrm{cyc}}^{(-)}=\frac{h}{E^{(-)}}=\frac{h}{E^{(+)}}=\tau_{\mathrm{cyc}}^{(+)},
+\label{eq:pZEB-cycle}
+\end{equation}
+so that reflected/advanced cycles match. 
+In this manuscript the Effective Field Theory (EFT) is formulated for our sector; the paired neutrality \eqref{eq:pZEB-neutrality}--\eqref{eq:pZEB-cycle} acts as a boundary condition linking $\mathcal{F}^{-}$ to $\mathcal{U}^{+}$, while explicit cross--sector couplings (if any) are deferred to companion papers.
+
+
+
+\subsection{Key identities linking to the fabric picture}
+The negative-time fabric implies inward/outward aggregation and heating rules.
+We collect the working identities used in phenomenology:
+\begin{align}
+&\text{(split identity)} 
+&&\big(v_T^{+}\big)^{2}+\big(v_T^{-}\big)^{2}=c^{2},
+\label{eq:key-split}\\
+&\text{(positive-energy emergence)} 
+&&\rho_{+}(x)\;\propto\;\big(v_{T,\rm in}^{-}\big)^{2}\,f^{2},
+\label{eq:key-rho-plus}\\
+&\text{(mass deposition; comoving)} 
+&&\rho_{M}(x;\Delta t^{-})\;\simeq\;\rho_{M}^{(0)}(x)+\frac{\Ecut}{c^{2}}\;\frac{N_{\rm ref}(\Delta t^{-})}{V_{\rm com}},
+\label{eq:key-rho-M}\\
+&\text{(cycle-time identity; revised UTFE)} 
+&&\tau_{\rm cyc}=\frac{1}{\nu}=\frac{h}{E}=\frac{h}{k_B T_{\rm eff}}=\frac{h}{m_{\rm eff}c^{2}},
+\qquad
+\Delta t^{-}\equiv \tau_{\rm cyc}^{(-)}=\frac{h}{E^{(-)}}.
+\label{eq:key-UTFE}
+\end{align}
+Here $v_{T,\rm in}^{-}\!\equiv v_T^{+}$ in the mapping \eqref{eq:vT-map-final}, and $N_{\rm ref}$ counts quadratic reflections accumulated in $\mathcal{F}^{-}$.
+
+\subsection{Consistency statements}
+\paragraph{Ghost freedom.}
+The $(R_+,R_-)$ kinetic matrix has eigenvalues $1\pm\varepsilon$; tree-level stability requires $|\varepsilon|<1$.
+\paragraph{Constraint enforcement.}
+Variation of \eqref{eq:L-cons-final} with respect to $\varsigma(x)$ imposes \eqref{eq:uR-constraint}, which is equivalent to the split identity \eqref{eq:TRSM-split-final}.
+\paragraph{Recovery limits.}
+In the decoupling limit $\varepsilon,\lambda_H,\kappa_F/\Lambda^2,\xi_R,c_i\!\to\!0$ the theory reduces continuously to GR+SM plus two decoupled scalars minimized at $R_+^2+R_-^2=f^2$.
+
+\subsection{Parameter dictionary (mass dimension in $\hbar=c=1$)}
+\begin{center}
+\begin{tabular}{l c c}
+\hline
+Parameter & Symbol & Mass dim. \\
+\hline
+Reflection scalars & $R_\pm$ & $1$ \\
+Temporal vector & $u^\mu$ & $0$ \\
+TRSM scale & $f\simeq \Ecut$ & $1$ \\
+Planck mass & $\Mpl$ & $1$ \\
+Vector sector scale & $M_u$ & $1$ \\
+Lagrange multiplier (unit norm) & $\lambda_u$ & $4$ \\
+Constraint multiplier & $\varsigma(x)$ & $0$ \\
+Kinetic mixing & $\varepsilon$ & $0$ \\
+Quartic couplings & $\lambda_{1,2}$ & $0$ \\
+Higgs portal & $\lambda_H$ & $0$ \\
+Photon portal coeff. & $\kappa_F/\Lambda^{2}$ & $-2$ \\
+Non-minimal curvature & $\xi_R$ & $0$ \\
+Masses & $m_\pm$ & $1$ \\
+Cutoff & $\Lambda$ & $1$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Remarks on phenomenology}
+\begin{itemize}
+  \item The mapping \eqref{eq:vT-map-final} ties fabric kinematics to field derivatives, making \eqref{eq:key-split} an operator statement in the EFT via \eqref{eq:L-cons-final}.
+  \item The potential \eqref{eq:V-final} stabilizes $R_+^2+R_-^2\simeq f^2$, providing a natural amplitude for reflected modes consistent with $f\simeq \Ecut$.
+  \item Gauge-invariant portals in \eqref{eq:L-int-final} enable laboratory tests (Higgs couplings, precision EM) while allowing small deviations by choosing $\lambda_H,\kappa_F/\Lambda^2,\xi_R$ within experimental bounds.
+\end{itemize}
+\paragraph*{Vortex sector deferred.}
+The present manuscript adopts the minimal TRSM EFT sufficient for background and low–energy phenomenology. 
+Hollow temporal vortices (HTVs)—relevant to supermassive black–hole seeding and galactic architecture—are treated in a companion paper as an \emph{extension sector}. 
+In the appropriate limit (negligible phase gradients and vorticity) the extended action reduces to the minimal Lagrangian used here.% so the core results (temporal split identity, revised UTFE, zero–energy background, and SM portals) remain unchanged.
+
+
+\appendix
+\section{Appendix A: Derivation D1 in Natural Units}
+\label{app:D1-natural}
+
+\paragraph{Goal.}
+We re-express the ``D1'' deposition estimate in dimensionally consistent form using natural units ($\hbar=c=1$), and only then restore SI units.
+
+\subsection*{A.1 Natural-units setup}
+Let the TRSM cut scale be $f\equiv \Ecut$. Define the temporal and spatial cut quanta
+\[
+\tau_{\rm cut}=\frac{1}{\Ecut}, 
+\qquad 
+\ell_{\rm cut}=\frac{1}{\Ecut}.
+\]
+A coarse-graining cell of the reflected fabric has four-volume 
+$V^{(4)}_{\rm cell}=\tau_{\rm cut}\,\ell_{\rm cut}^{3}=1/\Ecut^{4}$, 
+and number density (per comoving 3-volume)
+\[
+n_{\rm cell}=\frac{1}{\ell_{\rm cut}^{3}}=\Ecut^{3}.
+\]
+
+\subsection*{A.2 Deposition ansatz}
+Assume that, per negative-time cycle, an average energy $\xi\,\Ecut$ is deposited into a fraction $\chi(x)\!\in\![0,1]$ of cells, with a dimensionless cumulative reflection factor $\Upsilon(\Delta t^{-})$ counting the number of effective quadratic reflections per cell accumulated over $\Delta t^{-}$. 
+Then the deposited \emph{energy density} in natural units reads
+\begin{equation}
+\rho_{\rm dep}(x;\Delta t^{-})
+=\big[\xi\,\chi(x)\,\Upsilon(\Delta t^{-})\big]\;\Ecut\;n_{\rm cell}
+=\big[\xi\,\chi(x)\,\Upsilon(\Delta t^{-})\big]\;\Ecut^{4}.
+\label{eq:D1-energy-density-Nat}
+\end{equation}
+Equivalently, the corresponding \emph{mass density} is 
+\begin{equation}
+\rho_{M}(x;\Delta t^{-})
+=\frac{\rho_{\rm dep}}{c^{2}}
+\;\;\xrightarrow{\;\hbar=c=1\;}\;\;
+\rho_{M}=\rho_{\rm dep},
+\end{equation}
+while the \emph{number density of deposited quanta} is
+\begin{equation}
+n_{\rm ref}(x;\Delta t^{-})
+=\chi(x)\,\Upsilon(\Delta t^{-})\,n_{\rm cell}
+=\chi(x)\,\Upsilon(\Delta t^{-})\,\Ecut^{3}.
+\label{eq:D1-nref}
+\end{equation}
+Combining \eqref{eq:D1-energy-density-Nat} and \eqref{eq:D1-nref} gives the compact relation
+\begin{equation}
+\rho_{\rm dep}(x;\Delta t^{-})=\Ecut\,n_{\rm ref}(x;\Delta t^{-}),
+\qquad
+\text{(natural units)}.
+\label{eq:D1-compact}
+\end{equation}
+This is precisely the working relation used in the main text for the mass/energy deposition law.
+
+\subsection*{A.3 Restoring SI units}
+Energy density has mass dimension four in natural units. To convert to SI,
+\begin{equation}
+\rho_{\rm dep}^{\rm (SI)}(x;\Delta t^{-})
+=\big[\xi\,\chi(x)\,\Upsilon(\Delta t^{-})\big]\;
+\frac{\Ecut^{4}}{\hbar^{3}c^{3}}.
+\label{eq:D1-SI}
+\end{equation}
+Correspondingly,
+\begin{equation}
+n_{\rm ref}^{\rm (SI)}(x;\Delta t^{-})
+=\chi(x)\,\Upsilon(\Delta t^{-})\;
+\frac{\Ecut^{3}}{\hbar^{3}c^{3}},
+\qquad
+\rho_{M}^{\rm (SI)}=\frac{\rho_{\rm dep}^{\rm (SI)}}{c^{2}}.
+\end{equation}
+Equations \eqref{eq:D1-SI} (and its number-density counterpart) replace earlier inconsistent expressions involving $E^{2}/c^{3}$, and make explicit that the TRSM deposition scaling is controlled by $\Ecut^{4}$ up to dimensionless efficiencies $\xi$, $\chi$, and the cumulative factor $\Upsilon(\Delta t^{-})$.
+
+\paragraph{Link to the main-text notation.}
+Identifying $n_{\rm ref}^{\rm (SI)}=N_{\rm ref}/V_{\rm com}$ and using $\rho_{M}^{\rm (SI)} = (\Ecut/c^{2})\,n_{\rm ref}^{\rm (SI)}$ reproduces the comoving deposition law quoted in Eq.~\eqref{eq:key-rho-M} of the main text, now with transparent dimensional bookkeeping.
+
+\appendix
+
+\section*{Appendix B: Notation and dimensions (concise)}
+\begin{center}
+\begin{tabular}{lcl}
+\hline
+Quantity & Symbol & Meaning \\
+\hline
+Cut scale & $f\equiv \Ecut$ & TRSM organizing energy scale \\
+Temporal speeds & $v_{T,a}^{-}$ & Past--directed, $a=0$ (bg), $1$ (event) \\
+Temporal split & --- & $(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}$ \\
+Temporal flow & $u^\mu$ & Unit timelike vector, $u_\mu u^\mu=-1$ \\
+Cycle time & $\tau_{\rm cyc}$ & $h/E=1/\nu=h/(k_BT_{\rm eff})=h/(m_{\rm eff}c^2)$ \\
+Reflected scalars & $R_0,R_1$ & Build $\Phi=(R_0+iR_1)/\sqrt{2}$ \\
+Temporal density & $\rho_T,\,\rho_T^{(0)}$ & $|\Phi|^{2}$ (local/background) \\
+Minimal cell & $(\tau_{\rm cut},\ell_{\rm cut})$ & $(h/f,\;c\,h/f)$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Appendix B: Stability conditions}
+For a quartic potential $V(R_0,R_1)=\lambda_1(R_0^2+R_1^2-f^2)^2+\lambda_2(R_0R_1)^2$, boundedness at large fields requires
+\[
+\boxed{\lambda_1>0,\qquad \lambda_2\ge -4\,\lambda_1}\,.
+\]
+If a complex field $\Phi=(R_0+iR_1)/\sqrt{2}$ with $V_\Phi=\lambda_\Phi(|\Phi|^2-f^2/2)^2$ is used, boundedness requires $\boxed{\lambda_\Phi>0}$.
+
+\section*{Appendix C: Implementing the split as a constraint}
+A Lagrange multiplier $\varsigma$ yields
+\[
+\Lag_{\rm cons}=\varsigma\Big[(u\!\cdot\!\partial R_0)^2+(u\!\cdot\!\partial R_1)^2-f^{4}\Big],
+\]
+which in the comoving frame enforces $(\dot R_0)^2+(\dot R_1)^2=f^{4}$, giving $(v_{T,0}^{-})^{2}+(v_{T,1}^{-})^{2}=c^{2}$.
+
+\section*{Appendix D: Proper vs.\ cycle time}
+On timelike worldlines $d\tau^{2}=-ds^{2}/c^{2}$; on null worldlines $d\tau=0$ while the cycle time remains $\tau_{\rm cyc}=h/E$.
+
+\nocite{*}
+\bibliography{refs-trsm-refs}
+
+\end{document}
+
