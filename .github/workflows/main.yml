@@ -1,0 +1,50 @@
+name: Build LaTeX PDFs (any project)
+
+on:
+  # يتشغّل تلقائيًا عند أي تغيير في ملفات .tex
+  push:
+    paths:
+      - '**/*.tex'
+      - '.github/workflows/latex-any-project.yml'
+  # يسمح لك بتشغيله يدويًا من صفحة Actions
+  workflow_dispatch:
+
+jobs:
+  build-latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) سحب المستودع
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2) تثبيت TeX Live و latexmk (تثبيت عام يناسب أي مشروع)
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full latexmk
+
+      # 3) البحث عن جميع ملفات .tex التي تحتوي على \documentclass وبناؤها
+      - name: Compile all LaTeX root files
+        run: |
+          set -e
+          echo "Searching for LaTeX root files..."
+          # البحث عن كل ملفات .tex حتى عمق 5 مجلدات (يمكن تعديل maxdepth لو أحببت)
+          find . -maxdepth 5 -type f -name "*.tex" -print0 | while IFS= read -r -d '' file; do
+            if grep -q '\\documentclass' "$file"; then
+              echo "======================================="
+              echo "Compiling LaTeX document: $file"
+              echo "======================================="
+              latexmk -pdf -interaction=nonstopmode -halt-on-error "$file"
+            else
+              echo "Skipping non-root tex file: $file"
+            fi
+          done
+
+      # 4) رفع جميع ملفات PDF الناتجة كـ Artifacts
+      - name: Upload all PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: latex-pdfs
+          path: |
+            **/*.pdf
